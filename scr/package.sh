@@ -7,7 +7,7 @@ if [ -f "$(echo pkg1-*.txz)" ]; then
 	basestrap -U /mnt /mnt/var/cache/pacman/pkg/*
 else
 	sed -i "/--noconfirm/s/(/(--disable-download-timeout /" /bin/basestrap
-	basestrap /mnt base artix-archlinux-support linux linux-firmware runit elogind-runit grub efibootmgr dash networkmanager-runit || exit 1
+	basestrap /mnt base artix-archlinux-support linux linux-firmware runit elogind-runit grub efibootmgr dash networkmanager-runit pv || exit 1
 	x="$PWD"
 	(cd /mnt/var/cache/pacman/pkg && tar -Jcvf $x/pkg1-$(date "+%Y%m%d").txz *.pkg.tar.zst)
 fi
