@@ -1,0 +1,13 @@
+artix-archlinux-support
+base
+dash
+efibootmgr
+elogind-runit
+grub
+https://aur.archlinux.org/cgit/aur.git/plain/dashbinsh.hook?h=dashbinsh
+https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-mirrorlist.pkg.tar.zst
+linux
+linux-firmware
+networkmanager-runit
+pv
+runit

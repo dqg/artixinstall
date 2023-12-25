@@ -1,7 +1,6 @@
-#!/bin/sh
+#!/bin/bash
 
-chmod -R 777 scr
-scr/disk.sh
-scr/package.sh || exit 1
-artix-chroot /mnt /chroot.sh
-rm /mnt/chroot.sh
+. scr/scr1.sh
+. scr/scr2.sh
+artix-chroot /mnt /scr3.sh
+rm /mnt/scr3.sh
